@@ -24,6 +24,7 @@ useEffect(() => {
   }
 
   const logoutHandler = () => {
+    localStorage.removeItem('isLoggedIn')
     setIsLoggedIn(false)
   }
   return (
